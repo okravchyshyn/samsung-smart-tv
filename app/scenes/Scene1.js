@@ -42,6 +42,12 @@ SceneScene1.prototype.initialize = function () {
 	// this function will be called only once when the scene manager show this scene first time
 	// initialize the scene controls and styles, and initialize your variables here
 	// scene HTML and CSS will be loaded before this function is called
+	sf.service.VideoPlayer.setKeyHandler(sf.key.ENTER, function () {
+		alert("Enter in full screen mode");
+		sf.service.VideoPlayer.setFullScreen(false);
+	});
+
+	
 	Server.init();
 	Server.dataReceivedCallback = function() {
 		alert("callback is called");
@@ -97,6 +103,7 @@ SceneScene1.prototype.setFocus = function(newFocus) {
 SceneScene1.prototype.toglePlayerFullScreenMode = function() {
 	alert( "toglePlayerFullScreenMode" );
 	sf.service.VideoPlayer.setFullScreen(true);
+	
 	/*
 	if ( this.playerFullScreenMode == true ) {
 		alert( "set to false" );
@@ -220,7 +227,8 @@ Server.init = function() {
      };
 	 
 	  //xhttp.setRequestHeader("Access-Control-Allow-Origin","*");
-	 this.xhttp.open("GET","http://192.168.1.60:8080/channels",true);
+	 //this.xhttp.open("GET","http://192.168.1.60:8080/channels",true);
+	 this.xhttp.open("GET","http://194.44.24.240:8080/channels",true);
 	 alert("##### opened ...");
 	 this.xhttp.send(null);
 	 //alert("response text:" + xhttp.responseText);

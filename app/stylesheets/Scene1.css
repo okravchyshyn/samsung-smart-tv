@@ -2,43 +2,33 @@
 	position : absolute;
 	left : 0px;
 	top : 0px;
-	width : 960px;
+    width : 960px;
 	height : 540px;
-	background-color : #ffffff;
+background-color : #ffffff;
 	background-image : url('');
 }
-#SceneScene1 #svecListbox_csfw{
-	position : absolute;
-	left : 30px;
-	top : 30px;
-	width : 112px;
-}
-#SceneScene1 #svecLabel_aacx{
-	position : absolute;
-	font-size : 10pt;
-	color : #000000;
-	left : 410px;
-	top : 40px;
-	width : 130px;
-}
+
 #SceneScene1 #svecListbox{
 	position : absolute;
-	left : 10px;
-	top : 40px;
-	width : 112px;
+	left : 2%;
+	top : 2%;
+	/* height : 90%; */
+    width : 20%;
 }
 #SceneScene1 #svecLabel{
 	position : absolute;
 	font-size : 10pt;
 	color : #000000;
-	left : 300px;
-	top : 0px;
-	width : 130px;
+	left : 25%;
+	top : 90%;
+	height : 10%;
+	width : 50%;
 }
 #SceneScene1 #svecVideo{
 	position : absolute;
-	left : 190px;
-	top : 39px;
-	height : 372px;
-	width : 522px;
+	
+    left : 250px;
+	top : 10px;
+	height : 80%;
+	width : 70%;
 }
