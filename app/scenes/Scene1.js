@@ -47,13 +47,15 @@ SceneScene1.prototype.initialize = function () {
 		sf.service.VideoPlayer.setFullScreen(false);
 	});
 
-	
+	/*
 	Server.init();
 	Server.dataReceivedCallback = function() {
 		alert("callback is called");
 		SceneScene1.prototype.fillChannelList();
 	};
+	*/
 
+    alert("videoNames:" + Server.videoNames.toString());
 	
 	$('#svecListbox').sfList({
 		data:Server.videoNames,
@@ -228,7 +230,7 @@ Server.init = function() {
 	 
 	  //xhttp.setRequestHeader("Access-Control-Allow-Origin","*");
 	 //this.xhttp.open("GET","http://192.168.1.60:8080/channels",true);
-	 this.xhttp.open("GET","http://194.44.24.240:8080/channels",true);
+	 this.xhttp.open("GET","http://213.174.19.145:8080/channels",true);
 	 alert("##### opened ...");
 	 this.xhttp.send(null);
 	 //alert("response text:" + xhttp.responseText);
